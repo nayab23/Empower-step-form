@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/step-form.css">
+</head>
+
+<body>
+  <div class="top-header">
+    <img src="./assets/images/logo.png" alt="">
+
+    <ul class="m-0 p-0 navigation_menu d-flex align-items-center">
+      <li><a href="#">Need help?</a></li>
+      <li><a href="#">(215) 585–2144</a></li>
+      <li class="fs-1">|</li>
+      <li><a href="#">support@empower.com</a></li>
+    </ul>
+  </div>
+
+  <section class="multi-step-form">
+    <form action="#" method="post">
+      <fieldset aria-label="Step One" tabindex="-1" id="step-1">
+        <h1>Let's check your insurance</h1>
+        <p>Find out if your care might be covered.</p>
+        <div class="row">
+          <div class="col-12 my-3">
+            <label for="confirm-field">Insurance plan</label>
+            <select id="insurance-plan" class="form-select form-control" aria-placeholder="Type to find your plan..." required>
+              <option value="" class="disabled">Type to find your plan...</option>
+              <option value="option1">AmeriHealth CHC/VIP</option>
+              <option value="option2">AmeriHealth Caritas PA</option>
+              <option value="option3">Anthem BCBS (Formerly Empire BCBS)</option>
+              <option value="option4">Anthem BCBS of Connecticut</option>
+              <option value="option5">Anthem BCBS of Maine</option>
+              <option value="option6">Anthem BCBS of Virginia</option>
+              <option value="option7">Anthem Healthkeepers</option>
+              <option value="option8">Arizona Medicare</option>
+            </select>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button id="next-step-1" class="btn btn-default btn-next btn-primary" type="button">Next</button>
+        </div>
+      </fieldset>
+
+      <!-- Extra Step for Option 3 and 4 -->
+      <fieldset aria-label="Extra Step" tabindex="-1" id="extra-step-1" style="display: none;">
+        <h1>We need a little more information to check your coverage</h1>
+        <p>You can find this information on your insurance card or in your insurance provider portal.</p>
+        <div class="row">
+          <div class="col-12 my-3">
+            <label for="MemberID">Member ID</label>
+            <input type="text" class="input-field form-control" name="MemberID" id="MemberID"
+              placeholder="Member ID" required value="">
+          </div>  
+        </div>
+        <div class="d-flex justify-content-between mb-step-control">
+          <button class="btn btn-default btn-prev ps-0" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+          <button id="next-extra-step-1" class="btn btn-default btn-next btn-primary" type="button">Check my coverage</button>
+        </div>
+      </fieldset>
+
+      <!-- Extra Step for Option 5 and onward -->
+      <fieldset aria-label="Extra Step" tabindex="-1" id="extra-step-2" style="display: none;">
+        <h1>We need a little more information to check your coverage</h1>
+        <p>You can find this information on your insurance card or in your insurance provider portal.</p>
+        <div class="row">
+          <div class="col-12 mt-3 mb-1">
+            <label for="MemberID">Member ID</label>
+            <input type="text" class="input-field form-control" name="MemberID" id="MemberID"
+              placeholder="Member ID" required value="">
+          </div> 
+          <div class="col-12 mb-10">
+            <label for="dob">Birthday</label>
+            <input type="date" class="input-field form-control" name="dob" id="dob"
+              placeholder="MM/DD/YYYY" required value="">
+          </div> 
+        </div>
+        <div class="d-flex justify-content-between mb-step-control">
+          <button class="btn btn-default btn-prev ps-0" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+          <button id="next-extra-step-2" class="btn btn-default btn-next btn-primary" type="button">Check my coverage</button>
+        </div>
+      </fieldset>
+      <!-- Extra Step for Option 5 and onward -->
+      <fieldset aria-label="Extra Step" tabindex="-1" id="extra-step-3" style="display: none;">
+        <h1>We need a little more information to check your coverage</h1>
+        <p>You can find this information on your insurance card or in your insurance provider portal.</p>
+        <div class="row">
+          <div class="col-12 mt-3 mb-1">
+            <label for="MemberID">Member ID</label>
+            <input type="text" class="input-field form-control" name="MemberID" id="MemberID"
+              placeholder="Member ID" required value="">
+          </div> 
+          <div class="col-12">
+            <label for="fname">First name</label>
+            <input type="text" class="input-field form-control" name="fname" id="fname"
+              placeholder="First name" required value="">
+          </div> 
+          <div class="col-12">
+            <label for="lname">Last name</label>
+            <input type="text" class="input-field form-control" name="lname" id="lname"
+              placeholder="Last name" required value="">
+          </div> 
+          <div class="col-12 mb-10">
+            <label for="dob">Birthday</label>
+            <input type="date" class="input-field form-control" name="dob" id="dob"
+              placeholder="MM/DD/YYYY" required value="">
+          </div> 
+        </div>
+        <div class="d-flex justify-content-between mb-step-control">
+          <button class="btn btn-default btn-prev ps-0" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+          <button id="next-extra-step-3" class="btn btn-default btn-next btn-primary" type="button">Check my coverage</button>
+        </div>
+      </fieldset>
+      <!-- Extra Step for Option 5 and onward -->
+      <fieldset aria-label="Extra Step" tabindex="-1" id="extra-step-4" style="display: none;">
+        <h1>We need a little more information to check your coverage</h1>
+        <p>You can find this information on your insurance card or in your insurance provider portal.</p>
+        <div class="row">
+          <div class="col-12 mt-3 mb-1">
+            <label for="MemberID">Member ID</label>
+            <input type="text" class="input-field form-control" name="MemberID" id="MemberID"
+              placeholder="Member ID" required value="">
+          </div> 
+          <div class="col-12 ">
+            <label for="fname">First name</label>
+            <input type="text" class="input-field form-control" name="fname" id="fname"
+              placeholder="First name" required value="">
+          </div> 
+          <div class="col-12 mb-10">
+            <label for="lname">Last name</label>
+            <input type="text" class="input-field form-control" name="lname" id="lname"
+              placeholder="Last name" required value="">
+          </div> 
+        </div>
+        <div class="d-flex justify-content-between mb-step-control">
+          <button class="btn btn-default btn-prev ps-0" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+          <button id="next-extra-step-4" class="btn btn-default btn-next btn-primary" type="button">Check my coverage</button>
+        </div>
+      </fieldset>
+
+      <!-- Step Two -->
+      <fieldset aria-label="Step Two" tabindex="-1" id="step-2" style="display: none;">
+        <div class="badge badge-primary rounded-pill">Coverage check complete</div>
+        <h1 class="mt-7">🎉 We accept your insurance</h1>
+        <p>We are in-network with AmeriHealth CHC/VIP, but we need to contact your insurance to verify a few things.</p>
+        <hr class="my-7">
+        <h1>Ready to get started?</h1>
+        <p>The next step is speaking with someone from our team to get your questions answered and get your intake visit scheduled.</p>
+        <div class="d-flex justify-content-between mb-step-control mt-9">
+          <button class="btn btn-default btn-prev ps-0" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+            <button class="btn btn-default btn-next-step-3 btn-primary" type="button" >Schedule my free intro call</button>
+        </div>
+      </fieldset>
+      <fieldset aria-label="Step Two" tabindex="-1" id="step-3" style="display: none;">
+       
+        <h1>👋 Welcome to myempower</h1>
+        <p>Let's set you up with a free 15-minute welcome call. First, we have a few questions that should take less than 5 minutes to answer.</p>
+        <p class="mt-10">We'll ask for your:</p>
+        <div class="d-flex align-content-center gap-4 mt-8">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <p class="m-0 mt-1">We'll ask for your:</p>
+        </div>
+        <div class="d-flex align-content-center gap-4 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+          <p class="m-0 mt-1">Phone number</p>
+        </div>
+        <div class="d-flex align-content-center gap-4 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+          <p class="m-0 mt-1">Relationship with opioids</p>
+        </div>
+        <div class="d-flex align-content-center gap-4 mt-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+          <p class="m-0 mt-1">Health insurance (if you have it)</p>
+        </div>
+        <div class="d-flex align-items-center justify-content-md-between justify-content-center flex-md-row flex-column-reverse flex-wrap gap-4 w-100 mt-10">
+          <ul class="m-0 p-0 navigation_menu d-flex flex-md-row flex-column text-center gap-2">
+            <li><a href="#" class="ps-0 p-0">Not ready?</a></li>
+            <li><a href="#" class="text-primary ps-0 p-0">Learn about empower</a></li>
+          </ul>
+          <div class="d-flex gap-4 flex-grow-1 justify-content-end w-md-auto w-100 flex-md-row flex-column">
+              <a href="signin.html" class="btn btn-light-primary fw-600" type="button">Sign in</a>
+              <a href="getstarted.html" class="btn btn-primary" type="button">Get started</a>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </section>
+
+  <script src="./assets/js/jquery-2.2.4.min.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+  <script src="./assets/js/multi-step-form.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#next-step-1').click(function () {
+        var selectedPlan = $('#insurance-plan').val();
+        if (selectedPlan === 'option1') {
+          $('#step-1').hide();
+          $('#step-2').show();
+        } 
+        else if (selectedPlan === 'option2') {
+          $('#step-1').hide();
+          $('#extra-step-1').show();
+        } 
+        else if (selectedPlan === 'option3' || selectedPlan === 'option7') {
+          $('#step-1').hide();
+          $('#extra-step-2').show();
+        }
+        else if ( selectedPlan === 'option4' || selectedPlan === 'option5' || selectedPlan === 'option6') {
+          $('#step-1').hide();
+          $('#extra-step-3').show();
+        } 
+        else if (selectedPlan === 'option8') {
+          $('#step-1').hide();
+          $('#extra-step-4').show();
+        } 
+      });
+
+      $('#next-extra-step-1').click(function () {
+        $('#extra-step-1').hide();
+        $('#step-2').show();
+      });
+
+      $('#next-extra-step-2').click(function () {
+        $('#extra-step-2').hide();
+        $('#step-2').show();
+      });
+      $('#next-extra-step-3').click(function () {
+        $('#extra-step-3').hide();
+        $('#step-2').show();
+      });
+      $('#next-extra-step-4').click(function () {
+        $('#extra-step-4').hide();
+        $('#step-2').show();
+      });
+      $('.btn-prev').click(function () {
+        $('#extra-step-2, #extra-step-1, #extra-step-3, #extra-step-4, #step-2').hide();
+        $('#step-1').show();
+      });
+      $('.btn-next-step-3').click(function () {
+        $('#extra-step-2, #extra-step-1, #extra-step-3, #extra-step-4, #step-2, #step-1').hide();
+        $('#step-3').show();
+      });
+    });
+
+
+
+
+    // $(document).ready(function () {
+    // var currentStep = 1;
+
+    // function showStep(step) {
+    //   $('fieldset').hide();
+    //   $('#step-' + step).show();
+    //   currentStep = step;
+    // }
+
+    // $('#next-button').click(function () {
+    //   var selectedOption = $('#insurance-plan').val();
+    //   if (selectedPlan === 'option1' || selectedPlan === 'option2') {
+    //     showStep(2);
+    //   } else if (selectedPlan === 'option3' || selectedPlan === 'option4') {
+    //     showStep(3);
+    //   } else if (selectedPlan === 'option5' || selectedPlan === 'option6' || selectedPlan === 'option7' || selectedPlan === 'option8') {
+    //     showStep(4);
+    //   }
+    // });
+
+    // $('.btn-prev').click(function () {
+    //   showStep(1); // Always go back to step 1
+    // });
+
+    // $('.btn-next').click(function () {
+    //   showStep(2); // Always go to the final step (step 2)
+    // });
+
+    // showStep(currentStep);
+ // });
+</script>
+  </script>
+  
+</body>
+
+</html>
