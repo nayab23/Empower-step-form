@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <link rel="stylesheet" href="./assets/js/plugins/plugins.bundle.css">
+  <link rel="stylesheet" href="./assets/css/step-form.css">
+
+  <div class="top-header">
+    <img src="./assets/images/logo.png" alt="">
+
+    <ul class="m-0 p-0 navigation_menu d-flex align-items-center">
+        <li><a href="#">Need help?</a></li>
+        <li><a href="#">(215) 585–2144</a></li>
+        <li class="fs-1">|</li>
+        <li><a href="#">support@empower.com</a></li>
+      </ul>
+  </div>
+
+
+  
+  <section class="multi-step-form">
+
+    <form action="#" method="post">
+      <fieldset aria-label="Step One" tabindex="-1" id="phone-step">
+      
+        <h1>Where do you live?</h1>
+        <p>This helps us pair you with a licensed clinician in your state.</p>
+        <div class="row">
+          <div class="col-12 my-3">
+            <label for="confirm-field">Primary state of residence</label>
+            <select id="stateselect" name="stateselect" class="form-select form-control" data-control="select2" data-placeholder="Type to find your plan..." data-allow-clear="true" data-hide-search="true" required>
+              <option value="" class="disabled">Type to find your plan...</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="District of Columbia">District of Columbia</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+            </select>
+            
+            <span class="not-licensed text-primary fs-5 mt-1"  style="display: none;">We're not licensed in your state yet</span>
+          </div>
+          <div class="col-12 mb-7 mt-5 licensed-state" style="display: none;">
+            <hr class="pb-5">
+           <h1></h1>
+           <p style="display: none;">Next, we need your phone number so we can send you texts about your care. Don't have your own phone number? Email <a href="" class="text-primary">support@empower.com</a></p>
+          </div>
+          <div class="col-12 mb-7 phone-number" style="display: none;">
+            <label for="mobile-number">Phone number</label>
+            <input type="text" class="input-field form-control" name="mobile-number" id="mobile-number"
+              placeholder="+1 (XXX) XXX - XXXX" required>
+              <p class="mt-3 fw-700">By clicking Next, you consent for us to send you texts. Standard rates apply.</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-6">Next</button>
+        </div>
+
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Two" tabindex="-1" id="TFO-step" >
+        <div id="kt_sing_in_two_factor_form">
+        <h1>🔓 For your security</h1>
+        <p class="mt-5">Please confirm your phone number by entering the confirmation code sent to (***) *** - 8676.</p>
+        <div class="d-flex flex-wrap my-7 otp position-relative pb-4">                      
+          <input type="text" name="code_1" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" required>
+          <input type="text" name="code_2" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" >
+          <input type="text" name="code_3" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" > 
+          <input type="text" name="code_4" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" > 
+          <input type="text" name="code_5" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" >                     
+          <input type="text" name="code_6" data-inputmask="'mask': '9', 'placeholder': ''" maxlength="1" class="form-control bg-transparent h-50px w-45px fs-2qx text-center mx-1 my-2" value="" inputmode="text" > 
+      </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+           
+            <div class="d-flex gap-md-3 gap-md-3 gap-6 flex-md-row flex-column">
+              <div class="btn border border-primary w-100 rounded-1">Send code again</div>
+              <button type="button" id="kt_sing_in_two_factor_submit" class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-3">
+                <span class="indicator-label">
+                    Submit
+                </span>
+                <span class="indicator-progress">
+                    Please wait... <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                </span>
+            </button>
+            </div>
+        </div>
+      </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step One" tabindex="-1" id="step-1">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 6.25%;"></div>
+        </div>
+        <h1>Were you referred by another healthcare provider?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label for="confirm-field">We offer the same evidence-based treatment to all patients.</label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="offer" value="yes" required>
+                <span class="form-check-label ms-2 me-0">Yes</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="offer" value="no">
+                <span class="form-check-label ms-2 me-0">No</span>
+              </label>
+          </div>
+          <div class="col-12 mb-7 yes-check">
+            <label for="confirm-field">Which healthcare provider or hospital referred you?</label>
+            <input type="text" class="input-field form-control" name="field" id="field"
+              placeholder="E.g. Dr. John Doe or Example Medical Ce" required>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-2">Next</button>
+        </div>
+
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Two" tabindex="-1" id="step-2">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 12.5%;"></div>
+        </div>
+        <h1>How would you describe your opioid use?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label for="confirm-field">This can include oxycodone (OxyContin), hydrocodone (Vicodin), morphine, methadone, kratom, fentanyl, and heroin.</label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="opioiduse" value="opioiduse1" required>
+                <span class="form-check-label ms-2 me-0"> I don't have my opioid use under control</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="opioiduse" value="opioiduse2" required>
+                <span class="form-check-label ms-2 me-0">I do have my opioid use under control</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="opioiduse" value="opioiduse3" required>
+                <span class="form-check-label ms-2 me-0">I've never used opioids</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span></button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-3">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Three" tabindex="-1" id="step-3">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 18.75%;"></div>
+        </div>
+        <h1>How would you describe your relationship with Suboxone?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+             <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="relationshipwithSuboxone" required value="relationshipwithSuboxone1">
+                <span class="form-check-label ms-2 me-0">  I'm currently taking Suboxone</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="relationshipwithSuboxone" required value="relationshipwithSuboxone2">
+                <span class="form-check-label ms-2 me-0">I've taken Suboxone in the past, but I'm not currently taking it</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="relationshipwithSuboxone" required value="relationshipwithSuboxone3">
+                <span class="form-check-label ms-2 me-0">I've never taken Suboxone</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-4">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Six" tabindex="-1" id="step-4">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 25%;"></div>
+        </div>
+        <h1>Have you taken Suboxone in the last week?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="Suboxonelastweek" required value="Suboxonelastweek1">
+                <span class="form-check-label ms-2 me-0">Yes</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="Suboxonelastweek" required value="Suboxonelastweek2">
+                <span class="form-check-label ms-2 me-0">No, not in the last week</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-5">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Five" tabindex="-1" id="step-5">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 31.25%;"></div>
+        </div>
+        <h1>Is your Suboxone prescribed by a medical professional?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label for="confirm-field">Patients often get Suboxone from other sources. We'll create a care plan for your individual situation. </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="prescribedbymedical" required value="prescribedbymedical1">
+                <span class="form-check-label ms-2 me-0">Yes, it's prescribed </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="prescribedbymedical" required value="prescribedbymedical2">
+                <span class="form-check-label ms-2 me-0">No, I'm getting it somewhere else</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-6">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Six" tabindex="-1" id="step-6">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 37.5%;"></div>
+        </div>
+        <h1>How many days do you have left on your current prescription?</h1>
+        <div class="row mb-3">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+            <input type="number" class="input-field form-control" name="days" id="days" required>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-7">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Seven" tabindex="-1" id="step-7">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 43.75%;"></div>
+        </div>
+        <h1>How long have you been taking your current daily dose of Suboxone?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="takingdailySuboxone" value="takingdailySuboxone1" required>
+                <span class="form-check-label ms-2 me-0"> Less than 3 months</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="takingdailySuboxone" value="takingdailySuboxone2" required>
+                <span class="form-check-label ms-2 me-0">3 to 6 months</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="takingdailySuboxone" value="takingdailySuboxone3" required>
+                <span class="form-check-label ms-2 me-0">More than 6 month</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-8">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Eight" tabindex="-1" id="step-8">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 50%;"></div>
+        </div>
+        <h1>Do you feel stable on your current daily dose?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="feelstable" value="feelstable1" required>
+                <span class="form-check-label ms-2 me-0">Yes, I feel stable</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="feelstable" value="feelstable2" required>
+                <span class="form-check-label ms-2 me-0">No, I don't feel stable</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-7">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-9">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Nine" tabindex="-1" id="step-9">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 56.25%;"></div>
+        </div>
+        <h1>How long have you been using opioids (not including Suboxone)?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label for="confirm-field">About 3 million Americans struggle with opioid use. You're not alone</label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="notincludingSuboxone" value="notincludingSuboxone1" required>
+                <span class="form-check-label ms-2 me-0"> Fewer than 6 months</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="notincludingSuboxone" value="notincludingSuboxone2" required>
+                <span class="form-check-label ms-2 me-0">6 to 11 months</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="notincludingSuboxone" value="notincludingSuboxone3" required>
+                <span class="form-check-label ms-2 me-0">1 to 5 years</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="notincludingSuboxone" value="notincludingSuboxone4" required>
+                <span class="form-check-label ms-2 me-0">6 to 10 years</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="notincludingSuboxone" value="notincludingSuboxone5" required>
+                <span class="form-check-label ms-2 me-0">More than 10 years</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-10">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step ten" tabindex="-1" id="step-10">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 62.5%;"></div>
+        </div>
+        <h1>How frequently are you using opioids? </h1>
+        <div class="row">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="frequentlyusingopioids" value="frequentlyusingopioids1" required>
+                <span class="form-check-label ms-2 me-0">Daily </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="frequentlyusingopioids" value="frequentlyusingopioids2" required>
+                <span class="form-check-label ms-2 me-0">Several times per week</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="frequentlyusingopioids" value="frequentlyusingopioids3" required>
+                <span class="form-check-label ms-2 me-0"> Several times per month</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="frequentlyusingopioids" value="frequentlyusingopioids4" required>
+                <span class="form-check-label ms-2 me-0"> I'm not currently using opioids</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-9">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-11">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step" tabindex="-1" id="step-11">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 68.75%;"></div>
+        </div>
+        <h1>Are you using heroin or fentanyl on a regular basis?</h1>
+        <div class="row">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="usingheroin" value="usingheroin1" required>
+                <span class="form-check-label ms-2 me-0">Yes</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="radio" name="usingheroin" value="usingheroin2" required>
+                <span class="form-check-label ms-2 me-0">No</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-12">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step" tabindex="-1" id="step-12">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 75%;"></div>
+        </div>
+        <h1>In the past two months, have you had difficulty with any of the following?</h1>
+        <div class="row">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+            <label for="confirm-field">We want to help you with whatever difficulties you're facing. Select all that apply. </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing1" required>
+                <span class="form-check-label ms-2 me-0">Difficulty accessing stable housing </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing2" required>
+                <span class="form-check-label ms-2 me-0">Difficulty paying utility bills</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing3" required>
+                <span class="form-check-label ms-2 me-0">Difficulty accessing reliable transportation (including gas costs)</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing4" required>
+                <span class="form-check-label ms-2 me-0">Difficulty with abusive or violent relationships with family or friends </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing5" required>
+                <span class="form-check-label ms-2 me-0">Difficulty with criminal justice involvement (such as incarceration or probation)</span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing6" required>
+                <span class="form-check-label ms-2 me-0">Concerns about safety in your neighborhood </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+                <input class="form-check-input h-25px w-25px" type="checkbox" name="difficultyfollowing" value="difficultyfollowing7" required>
+                <span class="form-check-label ms-2 me-0">None of the above</span>
+              </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-11">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-13">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step" tabindex="-1" id="step-13">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 81.25%;"></div>
+        </div>
+        <h1>Are you insured?</h1>
+        <div class="row">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+            <label for="confirm-field">We offer the same evidence-based treatment to all patients, regardless of how you choose to pay. </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1 flex-column text-start align-items-start">
+                <div class="d-flex align-items-center">
+                  <input class="form-check-input h-25px w-25px" type="radio" name="youinsured" required value="yes">
+                  <span class="form-check-label ms-2 me-0 text-primary"> Yes, I have health insurance </span>
+                </div>
+                <span class="form-check-label mx-0 mt-2"> Pay your out of pocket costs </span>
+              </label>
+              <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1 flex-column text-start align-items-start">
+                <div class="d-flex align-items-center">
+                  <input class="form-check-input h-25px w-25px" type="radio" name="youinsured" required value="no">
+                  <span class="form-check-label ms-2 me-0 text-primary">No, I'll pay without insurance </span>
+                </div>
+                <span class="form-check-label mx-0 mt-2"> $195/month</span>
+              </label>
+          </div>
+          <div class="col-12 mb-7 yes-check">
+            <label for="confirm-field">Insurance plan</label>
+              <select id="insuranceselect" name="stateselect" class="form-select form-control" data-control="select2" data-placeholder="Type to find your plan..." data-allow-clear="true" data-hide-search="true" required>
+                <option value="" class="disabled">Type to find your plan...</option>
+                <option value="AmeriHealth CHC/VIP">AmeriHealth CHC/VIP</option>
+                <option value="Anthem BCBS of Connecticut">Anthem BCBS of Connecticut</option>
+                <option value="AmeriHealth Caritas PA">AmeriHealth Caritas PA</option>
+                <option value="Anthem BCBS (Formerly Empire BCBS)">Anthem BCBS (Formerly Empire BCBS)</option>
+                <option value="Anthem BCBS of Maine">Anthem BCBS of Maine</option>
+                <option value="Anthem BCBS of Virginia">Anthem BCBS of Virginia</option>
+                <option value="Arizona Medicare">Arizona Medicare</option>
+              </select>
+              <span class="insuranceplan text-primary fs-5 mt-1"  style="display: none;">We're in-network with your insurance</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-14">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step" tabindex="-1" id="step-14">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 87.5%;"></div>
+        </div>
+        <h1>Why do you want to join empower?</h1>
+        <div class="row">
+          <div class="col-12 my-3  position-relative radio-field pb-4">
+            <p>Your "why" is the biggest reason you're here. It can help carry you through challenging times. Take your time to jot it down below.</p>
+            <label for="confirm-field">I want to join empower so that... </label>
+            <textarea name="" class="h-200px form-control" placeholder="Type here..." id=""></textarea>
+          </div>
+          <!-- <div class="col-12 mt-7 mb-7">
+            <button class="btn border border-primary w-100 "> Examples of a "why"</button>
+          </div> -->
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-13">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <div class="d-flex gap-md-7 gap-6 flex-md-row flex-column">
+            <div class="btn border border-primary w-100 rounded-1"  data-bs-toggle="modal" data-bs-target="#example-of-why"> Examples of a "why"</div>
+            <button class="btn btn-default btn-next btn-primary" type="button" aria-controls="step-15">Next</button>
+          </div>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step" tabindex="-1" id="step-15">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 93.75%;"></div>
+        </div>
+        <h1>How soon are you interested in starting treatment?</h1>
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="interestedintreatment" value="interestedintreatment1" required>
+              <span class="form-check-label ms-2 me-0">I'd like to start as soon as possible</span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="interestedintreatment" value="interestedintreatment2" required>
+              <span class="form-check-label ms-2 me-0">I'm not sure, I'd like a little more information first</span>
+            </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-14">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-default btn-next btn-primary" type="submit" aria-controls="step-16">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+
+      <fieldset aria-label="Step" tabindex="-1" id="step-16">
+        <div class="progress-bar">
+          <div class="progress bg-primary" style="width: 100%;"></div>
+        </div>
+        <h1>Choose a time for your free 15-minute welcome call</h1>
+        <p> After your welcome call, we'll schedule your first visit with a licensed clinician. No charge if we're not a fit. </p>
+        <div class="date-picker">
+          <div id="prevDateBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </div>
+          <div id="dateDisplay"></div>
+          <div id="nextDateBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </div>
+      </div>
+      
+        <div class="row">
+          <div class="col-12 my-3 position-relative radio-field pb-4">
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time1" required>
+              <span class="form-check-label ms-2 me-0">7:15pm GMT+5</span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time2" required>
+              <span class="form-check-label ms-2 me-0">7:45pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time3" required>
+              <span class="form-check-label ms-2 me-0"> 8:00pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time4" required>
+              <span class="form-check-label ms-2 me-0"> 8:15pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time5" required>
+              <span class="form-check-label ms-2 me-0"> 8:30pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time6" required>
+              <span class="form-check-label ms-2 me-0"> 8:45pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time7" required>
+              <span class="form-check-label ms-2 me-0"> 9:00pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time8" required>
+              <span class="form-check-label ms-2 me-0"> 9:15pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time9" required>
+              <span class="form-check-label ms-2 me-0"> 9:30pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time10 required">
+              <span class="form-check-label ms-2 me-0"> 9:45pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time11 required">
+              <span class="form-check-label ms-2 me-0"> 10:00pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time12 required">
+              <span class="form-check-label ms-2 me-0"> 10:15pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time13 required">
+              <span class="form-check-label ms-2 me-0"> 10:30pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time14 required">
+              <span class="form-check-label ms-2 me-0"> 10:45pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time15 required">
+              <span class="form-check-label ms-2 me-0"> 11:00pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time16 required">
+              <span class="form-check-label ms-2 me-0"> 11:15pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time17 required">
+              <span class="form-check-label ms-2 me-0"> 11:30pm GMT+5 </span>
+            </label>
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="radio" name="time" value="time18 required">
+              <span class="form-check-label ms-2 me-0"> 11:45pm GMT+5 </span>
+            </label>
+          </div>
+          <div class="col-12 mb-2 select-time" style="display: none;">
+            <label for="confirm-field">First name</label>
+            <input type="text" class="input-field form-control" name="fname" id="fname"
+              placeholder="First name">
+          </div>
+          <div class="col-12 mb-2 select-time" style="display: none;">
+            <label for="confirm-field">Last name</label>
+            <input type="text" class="input-field form-control" name="lname" id="lname"
+              placeholder="Last name">
+          </div>
+          <div class="col-12 my-4">
+            <label class="form-check form-check-custom form-check-solid bg-light-primary px-5 py-3 rounded-1">
+              <input class="form-check-input h-25px w-25px" type="checkbox" name="confirm" value="1">
+              <span class="form-check-label ms-2 me-0">Please text me if an earlier appointment time becomes available</span>
+            </label>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mb-step-control gap-4">
+          <button class="btn btn-default btn-prev" type="button" aria-controls="step-15">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back</span>
+          </button>
+          <button class="btn btn-primary" type="submit">Next</button>
+        </div>
+      </fieldset>
+      <!-- ------ -->
+      <div id="callconfirmed" class="position-relative" style="display: none;">
+        <div class="confirm-notification">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          </svg>
+          Welcome call confirmed
+        </div>
+        <h1 class="mbt-16"> We'll give you a call at 2:00am GMT+5 on Monday Aug 12 2024 </h1>
+        <p>If you'd like to reschedule, cancel, or have any questions, text <span class="text-primary">(215) 585-2144.</span></p>
+          
+       
+      </div>
+      <!-- ------ -->
+      <fieldset aria-label="Step Four" tabindex="-1" id="notinalaska">
+        <div class="confirm-notification">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          </svg>
+          Thanks, we've got your number
+        </div>
+        <h1 class="mbt-16">We'll text you when we launch in Alaska</h1>
+        
+      </fieldset>
+      <!-- ------ -->
+      <fieldset aria-label="Step Two" tabindex="-1" id="neverusedopioids">
+        <div class="confirm-notification bg-danger fw-800">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+          Sorry, looks like we're not a good fit
+        </div>
+        <h1 class="mbt-16">Currently, we only treat opioid use disorder</h1>
+        <p>Here are some other resources that may help.</p>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            Looking to help a friend?
+          </h2>
+        </div>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            SAMHSA's National Helpline
+            <br><span class="text-primary">1-800-662-HELP</span>
+          </h2>
+        </div>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            Free or reduced cost services
+            <br><span class="text-primary">Aunt Bertha</span>
+          </h2>
+        </div>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            Suicide Prevention Hotline
+            <br><span class="text-primary">1-800-273-TALK</span>
+          </h2>
+        </div>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            SVeteran's Crisis Line
+            <br><span class="text-primary">1-800-273-TALK</span>
+          </h2>
+        </div>
+        <div class="d-flex gap-3 mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef3d3d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1jyg6zf"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          <h2 class="m-0 fs-5">
+            National Domestic Violence Hotline
+            <br><span class="text-primary">1-800-799-SAFE</span>
+          </h2>
+        </div>
+      </fieldset>
+
+    </form>
+  </section>
+
+
+
+<div class="modal fade" tabindex="-1" id="example-of-why">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header py-1">
+                <h5 class="modal-title">Examples of a "why"</h5>
+
+                <!--begin::Close-->
+                <div class="btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mantine-1bp5ev7"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </div>
+                <!--end::Close-->
+            </div>
+
+            <div class="modal-body">
+                <p>I want to change my relationship with opioids so that...</p>
+                <p>✨ I can be fully present for my family and friends.</p>
+                <p>✨ I can save money and invest in my future.</p>
+                <p>✨ I can regain control of my life and make positive choices.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;display: none;">
+  <div aria-labelledby="swal2-title" aria-describedby="swal2-html-container"
+    class="swal2-popup bg-white swal2-modal swal2-icon-success swal2-show" tabindex="-1" role="dialog" aria-live="assertive"
+    aria-modal="true" style="display: grid;">
+    <div class="swal2-icon swal2-success swal2-icon-show" style="display: flex;">
+      <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+      <span class="swal2-success-line-tip"></span> <span class="swal2-success-line-long"></span>
+      <div class="swal2-success-ring"></div>
+      <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+      <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+    </div>
+    
+     <div class="swal2-html-container" id="swal2-html-container" style="display: block;font-family: sans-serif !important;">You have successfully fill you form!</div>
+   
+    <div class="swal2-actions" style="display: flex;">
+      <button type="button" class="swal2-confirm btn btn-primary" aria-label=""
+        style="display: inline-block;font-family: sans-serif !important;">Ok, got it!</button>
+    </div>
+  </div>
+</div>
+  <script src="./assets/js/plugins/plugins.bundle.js"></script>
+  <script src="./assets/js/plugins/scripts.bundle.js"></script>
+  <script src="./assets/js/plugins/two-factor.js"></script>
+  
+  <script src="./assets/js/jquery-2.2.4.min.js"></script>
+  <script src="./assets/js/jquery.validate.min.js"></script>
+
+  <script src="./assets/js/multi-step-form.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('.row').each(function() {
+        var row = $(this);
+
+        // Hide the yes-check div by default
+        row.find('.yes-check').hide();
+
+        // Handle radio button click
+        row.find('input[type="radio"]').on('change', function() {
+            if ($(this).val() == 'yes') {
+                row.find('.yes-check').show();
+            } else {
+                row.find('.yes-check').hide();
+            }
+        });
+    });
+});
+// -----------------------------
+
+const dateDisplay = document.getElementById('dateDisplay');
+const prevBtn = document.getElementById('prevDateBtn');
+const nextBtn = document.getElementById('nextDateBtn');
+
+// Initialize with the current date
+let currentDate = new Date('2024-08-09');
+
+function updateDateDisplay() {
+    const options = { month: 'short', day: 'numeric', year: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+    const day = (new Date().toDateString() === currentDate.toDateString()) ? "Today" : currentDate.toLocaleDateString('en-US', { weekday: 'long' });
+    dateDisplay.innerHTML = ` ${formattedDate} <br> ${day}`;
+}
+
+// Initial display
+updateDateDisplay();
+
+// Event listeners for buttons
+nextBtn.addEventListener('click', () => {
+    currentDate.setDate(currentDate.getDate() + 1);
+    updateDateDisplay();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentDate.setDate(currentDate.getDate() - 1);
+    updateDateDisplay();
+});
+
+$('#stateselect').click(function () {
+var state = $('#stateselect').val();
+
+if ( state === 'Ohio') {
+$('.phone-number, .licensed-state, .licensed-state p').show();
+$('.licensed-state h1').text("🎉 We serve your state");
+$('#stateselect').removeClass('border-primary');
+$('.not-licensed').hide();
+}else{
+  $('.phone-number, .not-licensed').show();
+$('#stateselect, .licensed-state').addClass('border-primary');
+$('.licensed-state h1').text("");
+$('.phone-number, .licensed-state').hide();
+}
+});
+$('#insuranceselect').click(function () {
+  var insuranceplan = $('#insuranceselect').val();
+  if (insuranceplan === '' || insuranceplan === null) {
+    $('.insuranceplan').hide()
+  } else{
+    $('.insuranceplan').show();
+  }
+});
+
+$('input[name="time"]').click(function () {
+  $('.select-time').show();
+});
+$('.swal2-confirm').click(function () {
+  $('.swal2-backdrop-show').hide();
+});
+
+
+document.getElementById('mobile-number').addEventListener('input', function (e) {
+  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+  e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+});
+  </script>
+</body>
+
+</html>

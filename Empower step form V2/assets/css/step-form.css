@@ -1,0 +1,270 @@
+  /* **************************************** Muti step form css ******************************* */
+
+
+
+  .no-js .multi-step-form fieldset button,
+  .multi-step-form.edit-form fieldset button,
+  .no-js .multi-step-form h2,
+  .multi-step-form.edit-form h2 {
+      display: none !important;
+  }
+
+  .no-js .multi-step-form fieldset,
+  .multi-step-form.edit-form fieldset {
+      display: block !important;
+  }
+
+  .no-js .multi-step-form [type="submit"],
+  .multi-step-form.edit-form [type="submit"],
+  .no-js .multi-step-form [type="reset"],
+  .multi-step-form.edit-form [type="reset"] {
+      display: inline-block !important;
+  }
+
+  .no-js .multi-step-form .steps,
+  .multi-step-form.edit-form .steps {
+      display: none;
+  }
+
+  .multi-step-form fieldset {
+      display: none;
+  }
+
+  .multi-step-form fieldset:first-of-type {
+      display: block;
+  }
+
+  .multi-step-form fieldset.hidden {
+      display: none;
+  }
+
+  .multi-step-form fieldset.visible {
+      display: block;
+  }
+
+  .multi-step-form .steps button {
+      border: 0;
+  }
+
+  .multi-step-form .steps [disabled] {
+      background: none;
+  }
+
+  .multi-step-form .steps .active {
+      background: #eee;
+  }
+
+  .error {
+      color: red;
+  }
+
+  label .optional {
+      font-weight: normal;
+      font-size: 90%;
+  }
+
+
+  /* ************************************************************** */
+  .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      border-bottom: 1px solid rgb(195, 195, 195);
+      padding: 3px 30px;
+  }
+
+  .top-header img {
+      height: 70px;
+  }
+
+  ul.navigation_menu li {
+      list-style: none;
+      float: left;
+  }
+
+  ul.navigation_menu li a {
+      color: #000000;
+      font-size: 19px;
+      padding: 5px 15px;
+      font-family: sans-serif;
+      font-weight: 700;
+  }
+
+  /* ************************************************************** */
+
+  .multi-step-form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 30px;
+  }
+
+  .multi-step-form form {        
+      margin-top: calc(3rem);
+      /* max-width: calc(40rem); */
+      width: 707px;
+      /* border: 0.125rem solid rgb(157 159 165); */
+      border: 1px solid rgb(195, 195, 195);
+      display: block;
+      padding: 2rem;
+      border-radius: 0.25rem;
+    }
+    .multi-step-form h1{
+        text-decoration: none;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 0px;
+        line-height: normal;
+        text-overflow: ellipsis;
+        overflow: auto;
+        color: #000000;
+    }      
+    .multi-step-form p,  .multi-step-form label{
+        color: #000000;
+        font-size: 1.37rem;
+        text-decoration: none;
+        font-family: sans-serif;
+        line-height: normal;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }       
+    .multi-step-form button.btn{
+        font-family: sans-serif !important;
+        border-radius: 0.25rem !important;
+    }
+    span, input, select, textarea, .badge, .input-otp, div.btn{
+        font-family: sans-serif !important;
+    }
+ 
+    .progress-bar{
+        height: 10px;
+        width: 100%;
+        background: rgb(195, 195, 195);
+        background: rgb(195, 195, 195);
+        border-radius: 10px;
+        margin-bottom: 25px;
+        /* display: none; */
+    }
+    .progress{
+        height: 100%;
+        border-radius: 10px;    
+    }
+    fieldset{
+        outline: none;
+        text-decoration: none;
+    }
+
+    
+
+    .date-picker {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: sans-serif;
+    }
+    
+    #nextDateBtn, #prevDateBtn {
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ef3d3d;
+        border-radius: 50%;
+    }
+    #nextDateBtn svg{
+        transform: rotate(180deg);
+    }
+    
+    #dateDisplay {
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 23px;    
+    }
+    .confirm-notification{
+        padding: 10px 20px;
+        color: #fff;
+        background: #1b8947;
+        font-size: 17px;
+        font-family: sans-serif;
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+    .confirm-notification svg{
+        height: 25px;
+        width: 25px;
+    }
+    .mbt-16{
+        margin-top: 20px !important;
+    }
+ @media (max-width: 800px) {
+    .confirm-notification{
+        position: absolute;
+    }
+    .mbt-16{
+        margin-top: 70px !important;
+    }
+    .progress-bar{
+        display: block;
+    }
+    .mb-step-control{
+        flex-direction: column-reverse;
+    }
+    /* .mb-step-control .btn-prev{
+        text-align: start;
+        padding-left: 0;
+        } */
+        .mb-step-control .btn-prev span{
+            border-bottom: 2.4px solid var(--kt-primary);
+        }
+        .top-header {
+            border-bottom: none;
+        }    
+        .top-header ul.navigation_menu{
+            display: none !important;
+        }
+        .multi-step-form form{
+            border: none;
+            padding: 0 30px;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .multi-step-form h1{
+            font-size: 1.75rem;
+        }
+        .multi-step-form p,  .multi-step-form label, .multi-step-form button.btn{ 
+            font-size: 1rem;
+        }
+        .multi-step-form button.btn, .multi-step-form .form-control, a.btn, div.btn{
+            width: 100%;
+            height: 45px;
+            padding: 4px 20px !important;
+            font-family: sans-serif;
+        }
+        .otp .form-control{
+            padding: 2px !important;
+        }
+        a.btn, div.btn{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+
+    a.btn {
+        font-family: sans-serif !important;
+    }
+    .otp span.error, .radio-field span.error{
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+    }
